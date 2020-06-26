@@ -6,7 +6,7 @@ addons:
         sonarcloud:
                 organization: "francesco1997"
                 token:
-                  secure: "mE+OFMS6JSaZ8fUMxs9SsApUWQiYqvs1k34jMQEz4dVZ5ZXfvLMv+XnsARUD3ww6vUGjIDXELO1qwEEhtQQU8ur8rNOEUu0TLZP5P8sitYrlFYRp0tf8WlElmZxOt+iAr99YrJL0TuMu6FQ4ojwf5F/V3YM8t0NVYjgaYEKvFqkd0f4OeSGsjWaYK49iThST39Ry9Umz55orwsH8QgX8TAvXVW3vGC620B/W6tpxO7MrieORUL2fLbzsKjNBzPylSiy2WHkaXCc2GMdv9KW0R27M+N/745nnoef425SI/s9TLCrtU5uUts2ecMJDVX5DJbsiUunJrl0lEc3OpMRDDpxcMJ1/8iGIloe2PL0RqXc8gQ6OGcXlVwPketkNsM4FvOPNTob5iIdntnKdHIlAOEbpAZyVxBJ0He4UyAbKkQPkhKJhjkjfjpa4VndxtX7s9iRlDYsn6ea0Jge61xovg035j36N4nryOnPv/wB5f/IQre8MOLX0r9qiCb3tXPGBqJZFjXZBVtxvl8L/om8xvjYkCuWBveuCutiqSlAQP0HPqcQkxpb2G0KJYwIovBnro2uTnLMZuCySHnib/IFNL6G3rdGGWBm3o4Re6g80eq2ZQytEDk+7wRROThgyl+sW1ZboUCutx/FM0740XyQDQneFSc3X3+Ksro1Vr2XIEMs="
+                  secure: "J2WwOuP7RrcCpm2E8RcWTUd6PcNVXGqnBkPZy+oVy1/L9+bZxeB/qYfp4QPWYPq2am9regPn5J1WZJS7YJNeJQdtlbWq8E/TVuuIA8yc2WBD1RSOMPLv5sUmKYylLE1r7jswMzBWPodbmdGbWbkdgm5oL/tG/BDAbTEXAracNBPpCORCbGuv4B54kd1hkC5+yd1cdGlXbsk7b0pNTSKC8Xmkhh5n9ZKLeVh2lY8kwBeTz5WVdhxFJ7MrCm3/g6sF5ua4IxvDJ/Hx1eH74LupyKCAmEqB5KvocX/L4aVGfE6qy09IBSNbkULwn83OjQe1PG19QK39jsaIG8v/Qdqk3RHvErVYn6+r2KkwsWgsVc6KOEI9xqT1HkevISlqH2MJ4EtlHCbaBMoJcgUTiJL05CRhLxYvYFyvZNQJ06aMrUS+dIq562yppIoBx3zKP8h2vJ+tj7KtBagwoK2hfoVZNqEAuvncFIpzuS4kVZaj4OkLflQUTOEGWdQhwIoKMxBZsYGKZ8qAwxp3iPn5/IbWUzfWoxzFPVL5LiJawwiRnRHuLB6GLzqGkhBXsFmD+QMkMB2wTPas/e6M7dfblLDq30qIR7WXMjO5k6w007kymgzxbOWpdWzRK8Rfvp+JtHCLVYdTbAEkJ3Qt61GNhVKN97gfO0GFM5KZsokZ4ADet2k="
 script: 
         - ant build
         - sonar-scanner
