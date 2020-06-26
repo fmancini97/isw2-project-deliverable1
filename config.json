@@ -1,0 +1,33 @@
+[{
+	"project-name": "OPENJPA",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "MAHOUT",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "BOOKKEEPER",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "AVRO",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "STORM",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "ZOOKEEPER",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "SYNCOPE",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+},
+{
+	"project-name": "TAJO",
+	"analysis-types": ["BUGS", "TICKET","NEWFEATURES"]
+}
+]

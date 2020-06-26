@@ -1,0 +1,12 @@
+dist: trusty
+language: java
+jdk:
+- openjdk8
+addons:
+        sonarcloud:
+                organization: "francesco1997"
+                token:
+                  secure: "mE+OFMS6JSaZ8fUMxs9SsApUWQiYqvs1k34jMQEz4dVZ5ZXfvLMv+XnsARUD3ww6vUGjIDXELO1qwEEhtQQU8ur8rNOEUu0TLZP5P8sitYrlFYRp0tf8WlElmZxOt+iAr99YrJL0TuMu6FQ4ojwf5F/V3YM8t0NVYjgaYEKvFqkd0f4OeSGsjWaYK49iThST39Ry9Umz55orwsH8QgX8TAvXVW3vGC620B/W6tpxO7MrieORUL2fLbzsKjNBzPylSiy2WHkaXCc2GMdv9KW0R27M+N/745nnoef425SI/s9TLCrtU5uUts2ecMJDVX5DJbsiUunJrl0lEc3OpMRDDpxcMJ1/8iGIloe2PL0RqXc8gQ6OGcXlVwPketkNsM4FvOPNTob5iIdntnKdHIlAOEbpAZyVxBJ0He4UyAbKkQPkhKJhjkjfjpa4VndxtX7s9iRlDYsn6ea0Jge61xovg035j36N4nryOnPv/wB5f/IQre8MOLX0r9qiCb3tXPGBqJZFjXZBVtxvl8L/om8xvjYkCuWBveuCutiqSlAQP0HPqcQkxpb2G0KJYwIovBnro2uTnLMZuCySHnib/IFNL6G3rdGGWBm3o4Re6g80eq2ZQytEDk+7wRROThgyl+sW1ZboUCutx/FM0740XyQDQneFSc3X3+Ksro1Vr2XIEMs="
+script: 
+        - ant build
+        - sonar-scanner
