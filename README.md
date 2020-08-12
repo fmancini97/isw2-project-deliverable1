@@ -19,7 +19,7 @@ The file is an array of jsons, each of which represents a project to analyze.
 ```js
 [{
     "project-name": "MAHOUT", // Name of the project
-    "analysis-types": ["BUGS", "TICKET","NEWFEATURES"], // Types of tickets to analyze
+    "analysis-types": ["BUGS", "TICKET","NEWFEATURES"] // Types of tickets to analyze
 },
 ...
 ]
