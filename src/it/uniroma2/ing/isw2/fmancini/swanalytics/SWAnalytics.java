@@ -15,7 +15,12 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ * Main class that performs Apache project analysis operations and generates datasets.
+ * The analysis to be performed and the projects to be analyzed can be configured in a JSON file 
+ * @author fmancini
+ *
+ */
 public class SWAnalytics {
 
 	public static void main(String[] args) {

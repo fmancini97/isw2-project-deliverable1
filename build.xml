@@ -87,7 +87,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="SWAnalytics (1)">
+    <target name="SWAnalytics">
         <java classname="it.uniroma2.ing.isw2.fmancini.swanalytics.SWAnalytics" failonerror="true" fork="yes">
             <classpath refid="isw2-project-deliverable1.classpath"/>
         </java>

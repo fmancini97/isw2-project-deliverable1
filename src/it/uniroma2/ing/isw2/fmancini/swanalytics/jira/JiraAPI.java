@@ -13,6 +13,7 @@ import org.json.JSONObject;
 import it.uniroma2.ing.isw2.fmancini.swanalytics.JSONTools;
 
 /**
+ * Allows you to interact with the Jira resources of Apache projects
  * @author fmancini
  *
  */
@@ -25,7 +26,12 @@ public class JiraAPI {
 		this.projectName = projectName;
 	}
 	
-	
+	/**
+	 * Search tickets for a specific issue type
+	 * @param issueType
+	 * @return
+	 * @throws IOException
+	 */
 	public Map<String,Ticket> retriveTickets(IssueType issueType) throws IOException {
 		Map<String,Ticket> tickets = new HashMap<>();
 		

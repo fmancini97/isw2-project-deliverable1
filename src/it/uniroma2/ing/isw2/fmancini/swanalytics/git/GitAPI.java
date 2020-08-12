@@ -21,6 +21,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
 
 /**
+ * Allows you to interact with the git repository of an Apache project
  * @author fmancini
  *
  */

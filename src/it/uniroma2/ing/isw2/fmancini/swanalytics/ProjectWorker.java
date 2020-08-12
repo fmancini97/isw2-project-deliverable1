@@ -16,6 +16,11 @@ import it.uniroma2.ing.isw2.fmancini.csv.CSVable;
 import it.uniroma2.ing.isw2.fmancini.swanalytics.jira.IssueType;
 import it.uniroma2.ing.isw2.fmancini.swanalytics.jira.Ticket;
 
+/**
+ * Performs the analysis of various types of Jira ticket of an Apache project
+ * @author fmancini
+ *
+ */
 public class ProjectWorker extends Thread {
 	
 	private static String baseDir = "output/";
@@ -38,6 +43,10 @@ public class ProjectWorker extends Thread {
 		this.issueTypes = issueTypes;
 	}
 	
+	/**
+	 * Analyze Jira tickets of one or more types.
+	 * The results are saved in csv files
+	 */
 	protected void analyzeTickets() {
 		for (IssueType issueType : this.issueTypes) {
 			logger.log(Level.INFO, "[{1}] Looking for issues of type {0} for the project {1}", new Object[] {issueType, projectName});

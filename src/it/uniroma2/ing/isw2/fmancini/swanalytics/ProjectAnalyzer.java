@@ -14,13 +14,22 @@ import it.uniroma2.ing.isw2.fmancini.swanalytics.jira.IssueType;
 import it.uniroma2.ing.isw2.fmancini.swanalytics.jira.JiraAPI;
 import it.uniroma2.ing.isw2.fmancini.swanalytics.jira.Ticket;
 
+/**
+ * Search for Jira tickets associated with an Apache project 
+ * @author fmancini
+ *
+ */
 public class ProjectAnalyzer {
 	private GitAPI git;
 	private JiraAPI jira;
 	private String projectName;
 	private String baseDir;
 	
-	
+	/**
+	 * 
+	 * @param projectName: name of the project
+	 * @param baseDir: folder where to save the metadata associated with the project
+	 */
 	public ProjectAnalyzer(String projectName, String baseDir) {
 		this.projectName = projectName;
 		if (!baseDir.substring(baseDir.length() - 1).contains("/")) {
@@ -48,6 +57,13 @@ public class ProjectAnalyzer {
 		this.jira = new JiraAPI(this.projectName);
 	}
 	
+	/**
+	 * Analyze the Jira tickets associated with the project
+	 * @param issueType: type of ticket issue
+	 * @return
+	 * @throws IOException
+	 * @throws GitAPIException
+	 */
 	public Map<String,Ticket> analyzeTickets(IssueType issueType) throws IOException, GitAPIException {
 		Map<String,Ticket> tickets = null;
 		tickets = this.jira.retriveTickets(issueType);
@@ -57,6 +73,11 @@ public class ProjectAnalyzer {
 		return tickets;
 	}
 	
+	/**
+	 * Search for Jira ticket fixed dates within commit comments
+	 * @param tickets
+	 * @param commits
+	 */
 	private void findFixedDate(Map<String,Ticket> tickets, List<CommitInfo> commits) {
 		for (CommitInfo commit : commits) {
 			List<String> ticketIds = commit.findTicketIds(this.projectName.toUpperCase() + "-");
